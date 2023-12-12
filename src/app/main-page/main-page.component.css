@@ -1,0 +1,47 @@
+.card{
+    margin: 20px;
+    margin-left: 90px;
+    width: 500px;
+    box-shadow: 1px 1px 2px 1px black;
+    background-color: #bde0fe;
+  
+ 
+}
+.col_6{
+    padding-left: 30px;
+}
+.zeroone{
+    font-size: 44px;
+    
+
+}
+/* .cards{
+    width: 600px;
+    height:600px
+} */
+span i{
+    font-size: 24px;
+    padding-left:10px;
+    padding-top: 10px;
+
+}
+.row{
+    margin-left:-150px
+}
+.headss{
+    font-family: 'Lobster Two', cursive;
+   
+    text-shadow: 1px 2px 6px  black, 1px 2px 6px  rgb(14, 203, 197);
+}
+.miandiv{
+    height:400px;
+    width: 1263px;
+    
+}
+
+.search{
+    margin-left:370px;
+    position: sticky;
+    top: 8%;
+    z-index:100;
+}

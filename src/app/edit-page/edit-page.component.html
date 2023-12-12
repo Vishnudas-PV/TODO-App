@@ -1,0 +1,58 @@
+<div class="text-center">
+    <h1 style="font-family: 'Lobster Two', cursive;">Update-List</h1>
+
+</div>
+<!-- {{list |json }} -->
+<div class="container">
+
+    <div class="row">
+     
+        <div class="col-6 my-4 py-5 ps-2">
+                <img src="https://images.pexels.com/photos/4160071/pexels-photo-4160071.jpeg?auto=compress&cs=tinysrgb&w=600" width="400px" height="400px" alt="">
+
+        </div>
+        <div class="col-6 my-3 py-3">
+
+            <div class="form-floating my-3">
+                <input [(ngModel)]="list.id" name="id"  type="text" class="form-control" id="floatingInput" placeholder="ID">
+                <label for="floatingInput"><b>Id</b></label>
+            </div>
+
+            <div class="form-floating my-3">
+                <input [(ngModel)]="list.title" name="title" type="text" class="form-control" id="floatingInput" placeholder="ID">
+                <label for="floatingInput"><b>Title</b></label>
+            </div>
+
+            <!-- todo list1 -->
+            <div class="form-floating my-3">
+                <input [(ngModel)]="list.list1" name="list1" type="text" class="form-control" id="floatingInput" placeholder="ID">
+                <label for="floatingInput">TodoList-1</label>
+            </div>
+            <!-- todo list2 -->
+            <div class="form-floating my-3">
+                <input [(ngModel)]="list.list2" name="list2" type="text" class="form-control" id="floatingInput" placeholder="ID">
+                <label for="floatingInput">TodoList-2</label>
+            </div>
+            <!-- todo list3 -->
+            <div class="form-floating my-3">
+                <input [(ngModel)]="list.list3" name="list3"  type="text" class="form-control" id="floatingInput" placeholder="ID">
+                <label for="floatingInput">TodoList-3</label>
+            </div>
+
+            <!-- todo list4 -->
+            <div class="form-floating my-3">
+                <input [(ngModel)]="list.list4" name="list4" type="text" class="form-control" id="floatingInput" placeholder="ID">
+                <label for="floatingInput">Todolist-4</label>
+            </div>
+
+            <!-- todo list5 -->
+            <div class="form-floating my-3">
+                <input [(ngModel)]="list.list5" name="list5" type="text" class="form-control" id="floatingInput" placeholder="ID">
+                <label for="floatingInput">Todolist-5</label>
+            </div>
+            <div class="text-center my-2 py-3">
+                <input (click)="updateList()"  type="button"class="btn btn-outline-dark" value="UpdateList">
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,95 @@
+<div class="miandiv">
+    <div class="text-center my-5 py-5 div1">
+        <h1>Remember The to-do-list but don't</h1>
+        <h1>forget the to-be list</h1>
+        <h6 class="my-5 text-warning">---Richard Branson---</h6>
+        <div>
+            <input type="button" routerLink="addPage" class="btn btn-outline-dark " value="Add A Todo">
+        </div>
+
+    </div>
+</div>
+<!-- {{allLists | json}} -->
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col_6">
+
+                <span class="my-3 ps-4 ms-5 text-warning">clear your mind</span>
+
+
+                <h3 class="my-3 ps-4 ms-5">Why Todo List app?</h3>
+                <p class="ps-4 ms-5"> ToDo List App is a kind of app that generally used to maintain our day-to-day
+                    tasks or list everything that we have to do, with the most important tasks at the top of the list,
+                    and the least important tasks at the bottom</p>
+                <p class="ps-4 ms-5">Focus on Most Important, Let your journey with TodoList and break the barriers and
+                    keep winning until you done , If its not for you then Whose <span>?</span>
+                    Subtracting from your list of priorities is as important as adding to it </p>
+
+            </div>
+            <div class="col-6">
+
+                <div class="card">
+                    <div class="d-flex">
+                        <span class="zeroone  ms-2 ps-3 text-warning">01</span>
+
+                        <div>
+
+                        </div>
+                    </div>
+                    <div class="card-body my-4">
+                        <p class="card-text">″You can always change your plan, but only if you have one. I’m a big
+                            believer in to-do lists. It helps us break life into small steps. I once put “get tenure” on
+                            my to-do list. That was naïve. The most useful to-do list breaks tasks into small steps.
+                            It’s like when I encourage Logan to clean his room by picking up one thing at a time.″</p>
+                        <p class="my-5 py-3 text-end text-warning">-Randy Pausch</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container my-5 py-5">
+    <h1 class="text-center my-4 py-4 headss">TODO LIST CREATED</h1>
+    <div class="text-center my-3 search">
+        <input (keyup)="search($event)" type="text" placeholder="search" class="form-control w-50 ">
+    </div>
+    <div class="row">
+        <div class="col-3" *ngFor="let list of allLists | pipes:searchKey:'title'">
+
+            <div class="card cards " style="width: 17rem;">
+                <div class="card-header text-start">
+                    {{list.title}}
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">{{list.list1}} </li>
+                    <li class="list-group-item">{{list.list2}} </li>
+                    <li class="list-group-item">{{list.list3}} </li>
+                    <li class="list-group-item">{{list.list4}} </li>
+                    <li class="list-group-item">{{list.list5}} </li>
+                </ul>
+                <div class="text-start py-3 ms-3">
+                    <button (click)=" deleteList(list.id)" class="btn btn-outline-dark m-2">Delete</button>
+                    <a routerLink="/mainComponent/viewPage/{{list.id}}"><button
+                            class="btn btn-outline-dark m-2">View</button></a>
+                    <button routerLink="editPage/{{list.id}}" class="btn btn-outline-dark m-2">Update</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+
+
+        </div>
+        <div class="col-3">
+
+
+        </div>
+        <div class="col-3">
+
+
+        </div>
+    </div>
+</div>

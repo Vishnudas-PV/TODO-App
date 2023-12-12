@@ -1,0 +1,16 @@
+.card{
+    margin: 20px;
+    
+    width: 500px;
+    box-shadow: 1px 1px 2px 1px rgb(35, 34, 34);
+    background-color: #bde0fe;
+  
+ 
+}
+/* span{
+    font-display:650px;
+    font-family: 'Alkatra', cursive;
+} */
+.secondcolumn{
+    padding-left:10px;
+}

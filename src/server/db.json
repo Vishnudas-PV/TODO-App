@@ -1,0 +1,40 @@
+{
+  "todo": [
+    {
+      "id": "1",
+      "title": "Monday Exam",
+      "list1": "6.00 to 8.00 - study",
+      "list2": "8.30 to 915 - rest",
+      "list3": "9.30 to 12.30 -study",
+      "list4": "4.00 to 8.00 -study",
+      "list5": "10.00 to 11.30 - revision"
+    },
+    {
+      "id": "2",
+      "title": "Groceries",
+      "list1": "Tomato",
+      "list2": "Ginger",
+      "list3": "Onion",
+      "list4": "Carrot",
+      "list5": "Maggie"
+    },
+    {
+      "id": "3",
+      "title": "Excercise",
+      "list1": "10 pushups",
+      "list2": "20 situps",
+      "list3": "3 set for buceps",
+      "list4": "3 set for triceps",
+      "list5": "20 pushups"
+    },
+    {
+      "id": "6",
+      "title": "Catering",
+      "list1": "Palimoola",
+      "list2": "ponganam kadu ",
+      "list3": "Kodungaloor",
+      "list4": "Cheroor",
+      "list5": "palazzo"
+    }
+  ]
+}

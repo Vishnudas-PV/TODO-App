@@ -1,0 +1,12 @@
+.card{
+    background-color: #bde0fe;
+    border: 2px solid red;
+    margin:20px;
+}
+h1{
+    font-family: 'Lobster Two', cursive;
+    color: red;
+}
+img{
+    width: 100%;
+}
